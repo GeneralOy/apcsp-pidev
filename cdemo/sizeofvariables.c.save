@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+int main()
+{
+  int in = 545;
+  char ch = "b";
+  float fl = 3.14
+  double db = 3.1415
+  // print value and size of an int variable
+  printf("char ch value %d (oct %o, hex %x) and size %d bytes.\n", a, a, a, sizeof(a));
+  printf("float fl value %d (oct %o, hex %x) and size %d bytes.\n", a, a, a, sizeof(a));"
+  printf("double db value %d (oct %o, hex %x) and size %d bytes.\n", a, a, a, sizeof(a));
+}
+
