@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 int arrayAdd(int* array, int s, int n);
-
+int z = 0;
 int main()
 {
 
@@ -22,9 +22,9 @@ for(int i = 1; i < 101; i++)
 
 }
 int arrayAdd(int* array, int s, int n) {
-  for(int i = 0; i < s; i++);
+  for(int x = 1; x < s+1; x++)
   {
-  *array[s+1] += n;
+  *(array+x) +=  n;
   }
 }
 //UNFINISHED - see last line?
