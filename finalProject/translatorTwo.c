@@ -11,7 +11,7 @@ int decToBinary(int n/*, int notationBase*/)
 	{
 		printf("1");
 		returningInt += k * 10^i;
-	}else if(k = 0)
+	}else(k = 0)
 	{
 		printf("0");
 	}
