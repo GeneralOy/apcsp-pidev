@@ -26,6 +26,10 @@ int decToBinary(int n )
 		returningInt = returningInt * 10;
 	}
 	n = n / 2;
+	if(n <= 1){
+	n = 0;
+	}
+
 	}
 	printf("\n");
 	printf("%d \n",returningInt);
@@ -35,7 +39,7 @@ int decToBinary(int n )
 int binToDecimal(int n, int notationBase, int base)
 {
 	int num, k, dec_Val = 0,i = 1;
-	while(n > 0)
+	while(n >= 1)
 	{
 		k = n % notationBase;
 		num = n / notationBase;
@@ -52,6 +56,10 @@ int binToDecimal(int n, int notationBase, int base)
 			printf("0");
 		
 			}
+		}
+		if(n >= 1)
+		{
+		n = 0;
 		}
 	}
 	return dec_Val;
