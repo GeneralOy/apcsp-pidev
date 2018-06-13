@@ -2,7 +2,7 @@
 #include <math.h>
 
 int binToDec(int bin);
-int decToBin(int dec);
+int decToBin(int n);
 unsigned numDigits(const unsigned n);
 
 int binToDec(int bin) {
@@ -32,7 +32,7 @@ int decToBinary(int n)
    	    bin = bin * 10;
 	    bin += 1;
 	}
-        else if(k & 0){
+        else {
             printf("0");
 	    bin = bin * 10;
 	}
