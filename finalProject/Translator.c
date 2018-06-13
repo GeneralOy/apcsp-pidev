@@ -62,7 +62,10 @@ int main(int argC, char* argv[]) {
 	int arg1, arg2;
 	int found = sscanf(argv[1], "%d", &arg1);
 	int found2 = sscanf(argv[2], "%d", &arg2);
-	if(found != 1) {
+	if(argC != 3) {
+		printf("You didn't fill both inputs!");
+		return 1;
+	}else if(found != 1) {
 		printf("That's not a number! Input a binary number!\n");
 		return 1;
 	}else if(arg2 != 1 && arg2 != 0) {
@@ -73,12 +76,12 @@ int main(int argC, char* argv[]) {
 		return 1;
 	}else {
 		int length = numDigits(arg1);
-	if(arg2 == 0) {
-		int finBin = decToBin(arg1);
-		printf("%d to binary is %d\n", arg1, finBin);
-	}else if(arg2 == 1) {
-		int finDec = binToDec(arg1);
-		printf("%d to decimal is %d\n", arg1, finDec);
+		if(arg2 == 0) {
+			int finBin = decToBin(arg1);
+			printf("%d to binary is %d\n", arg1, finBin);
+		}else if(arg2 == 1) {
+			int finDec = binToDec(arg1);
+			printf("%d to decimal is %d\n", arg1, finDec);
 	}
 	}
 
